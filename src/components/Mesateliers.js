@@ -20,7 +20,8 @@ export default class Mesateliers extends Component {
             NombrePlacesRes:'',
             Prix:'',
             photo_profil:'',
-            name:''
+            name:'',
+            visibilite:true
          };
 
     }
