@@ -1,0 +1,212 @@
+
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+#eto{
+  background-color: #f3671f;
+  color: burlywood;
+  height: 110px;
+  font-size: 30px;
+}
+
+.card {
+  border: 1px solid #28a745;
+}
+.card-login {
+  margin-top: 130px;
+  padding: 18px;
+  max-width: 30rem;
+}
+
+.card-header {
+  color: #fff;
+  /*background: #ff0000;*/
+  font-family: sans-serif;
+  font-size: 60px;
+  font-weight: 600 !important;
+  margin-top: 10px;
+  border-bottom: 0;
+}
+
+.input-group-prepend span{
+  width: 50px;
+  background-color: #ff0000;
+  color: #fff;
+  border:0 !important;
+}
+
+input:focus{
+  outline: 0 0 0 0  !important;
+  box-shadow: 0 0 0 0 !important;
+}
+
+.login_btn{
+  width: 130px;
+}
+
+.login_btn:hover{
+  color: #fff;
+  background-color: #ff0000;
+}
+
+.btn-outline-danger {
+  color: #fff;
+  font-size: 18px;
+  background-color: #28a745;
+  background-image: none;
+  border-color: #28a745;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: calc(2.25rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #28a745;
+  background-color: transparent;
+  background-clip: padding-box;
+  border: 1px solid #28a745;
+  border-radius: 0;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.input-group-text {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0.375rem 0.75rem;
+  margin-bottom: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.6;
+  color: #495057;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #e9ecef;
+  border: 1px solid #ced4da;
+  border-radius: 0;
+}
+#inputatelier{
+  width: 50%;
+  height: 50px;
+  text-align: center;
+  margin-top: 3%;
+  font-size: 25px;
+}
+#divatelier{
+  text-decoration: underline;
+  padding-top:20px;
+  color: #a78082;
+  font-size: 40px
+}
+#butatelier{
+  width: 120px;
+  height: 65px;
+  font-size: 20px;
+}
+
+#jtext{
+  line-height: 40px;
+  height: 50px;
+  font-size: 18px;
+  margin-right: 200px
+}
+
+
+
+
+
+.navbar-inverse
+{
+    background:#00796B;
+    border-bottom-color: #004D40;
+}
+.navbar-inverse .navbar-nav>li>a,.navbar-inverse .navbar-brand,.navbar-inverse .navbar-nav>.dropdown>a .caret
+{
+    color: #fff;
+}
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus,
+.navbar-nav>li>.dropdown-menu
+{
+    background:#4DB6AC;
+}
+.nav-pills>li>a
+{
+    color: #303F9F;
+    }
+
+.nav>li>a:hover, .nav>li>a:focus
+{
+    background-color: #EEEEEE;
+}
+#aaa{
+  border-right:1px solid black
+}
+#dasboard{
+  padding-top: 30px;
+}
+/* #admin{
+  padding-bottom: 50px;
+} */
+#Atelier{
+  color: #d05c62;
+  font-size: 40px;
+}
+footer{
+  background-color: #f3671f;
+  color: burlywood;
+  height: 140px;
+  font-size: 25px;
+
+}
+/* #a{
+  width: 50px;
+  height: 50px;
+} */
+#titre{
+  font-size: 80px;
+  color: #d05c62;
+  text-decoration: underline;
+}
+#milieu{
+  font-size:30px
+}
+#edit{
+  width: 85%;
+  height: 50px;
+  font-size: 25px;
+}
+#activer,#desactiver{
+  width: 85%;
+  height: 50px;
+  font-size: 20px;
+}
+#image{
+  padding-top: 5px;
+  margin-left: 40px
+}
+
+#login{
+  margin-bottom: 20px
+}
+
+h3{
+  text-align: center;
+  font-size: 50px!important;
+  margin:0;
+  padding-top:150px!important;
+  font-weight: bold!important;
+  color: red!important;
+}
+#slider{
+  width: 100px;
+  height: 600px;;
+}
