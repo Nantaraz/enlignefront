@@ -38,12 +38,12 @@ class Home extends React.Component {
         data.append('NombrePlacesDispo',this.state.NombrePlacesDispo);
         data.append('NombrePlacesRes',this.state.NombrePlacesRes)
         data.append('Prix',this.state.Prix);
-        fetch('http://aese.herokuapp.com/cuisinier/'+localStorage.getItem('id'), {
+        fetch('https://aese.herokuapp.com/cuisinier/'+localStorage.getItem('id'), {
           method: 'POST',
           body: data,
         }).then((response) => {
           response.json().then((body) => {
-            this.setState({ photo_profil: `http://aese.herokuapp.com/cuisinier/${body.photo_profil}`});
+            this.setState({ photo_profil: `https://aese.herokuapp.com/cuisinier/${body.photo_profil}`});
             console.log('ity ilay body.fil',body.photo_profil);
             
           });

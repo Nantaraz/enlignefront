@@ -4,7 +4,7 @@ import setAuthToken from '../setAuthToken';
 import jwt_decode from 'jwt-decode';
 
 export const inscrireUser = (user,history) => dispatch => {
-    axios.post('http://aese.herokuapp.com/register', user)
+    axios.post('https://aese.herokuapp.com/register', user)
     .then(res => history.push('/inscrire'))
     .catch(err => {
         dispatch({
@@ -15,7 +15,7 @@ export const inscrireUser = (user,history) => dispatch => {
 }
 
 export const registerUser = (user, history) => dispatch => {
-    axios.post('http://aese.herokuapp.com/register', user)
+    axios.post('https://aese.herokuapp.com/register', user)
             .then(res => history.push('/login'))
             .catch(err => {
                 dispatch({
@@ -26,7 +26,7 @@ export const registerUser = (user, history) => dispatch => {
 }
 
 export const loginUser = (user) => dispatch => {
-    axios.post('http://aese.herokuapp.com/login', user)
+    axios.post('https://aese.herokuapp.com/login', user)
             .then(res => {
                 const { token } = res.data;
                 // console.log('id:', res.data);

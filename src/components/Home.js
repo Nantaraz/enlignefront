@@ -14,7 +14,7 @@ class Home extends React.Component {
 
     }
     componentDidMount() {
-        axios.get('http://aese.herokuapp.com/profil')
+        axios.get('https://aese.herokuapp.com/profil')
             .then(response => {
                
                 console.log('i am a response', response)
@@ -43,7 +43,7 @@ class Home extends React.Component {
                                     <div class="card-body">
 
                                         <center><h4 class="card-title" id="titre">{obj.Titre}</h4></center>
-                                        <img width="98%" height="90%" src={'http://aese.herokuapp.com/user/' + obj.photo_profil} alt="pdp" />
+                                        <img width="98%" height="90%" src={'https://aese.herokuapp.com/user/' + obj.photo_profil} alt="pdp" />
                                         <p class="card-text" id='milieu'><li>Déscription: {obj.Description}</li></p>
                                         <p class="card-text" id='milieu'><li>Date: {obj.Date}</li></p>
                                         <p class="card-text" id='milieu'><li>Horaire du Debut: {obj.HoraireDebut}</li></p>

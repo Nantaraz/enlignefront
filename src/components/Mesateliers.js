@@ -27,7 +27,7 @@ export default class Mesateliers extends Component {
 
 
     componentDidMount() {
-        axios.get('http://aese.herokuapp.com'+this.props.location.pathname)
+        axios.get('https://aese.herokuapp.com'+this.props.location.pathname)
             .then(response => {
                 this.setState({ profil: response.data });
             })
@@ -51,7 +51,7 @@ export default class Mesateliers extends Component {
                                     <div class="card-body">
 
                                         <center><h4 class="card-title" id="titre">{obj.Titre}</h4></center>
-                                        <img width="98%" height="90%" src={'http://aese.herokuapp.com/user/' + obj.photo_profil} alt="pdp" />
+                                        <img width="98%" height="90%" src={'https://aese.herokuapp.com/user/' + obj.photo_profil} alt="pdp" />
                                         <p class="card-text" id='milieu'><li>Déscription: {obj.Description}</li></p>
                                         <p class="card-text" id='milieu'><li>Date: {obj.Date}</li></p>
                                         <p class="card-text" id='milieu'><li>Horaire du Debut: {obj.HoraireDebut}</li></p>
@@ -70,8 +70,8 @@ export default class Mesateliers extends Component {
                                             <div>
                                             {obj.visibilite===true ?(<button className="btn bg-danger" id="activer" onClick={(e)=>{
                                                 e.preventDefault()
-                                                axios.get(" http://aese.herokuapp.com/ateliermasquer/"+obj._id).then(res=>{
-                                                    axios.get('http://aese.herokuapp.com/profil/'+localStorage.getItem('id')).then(res=>{
+                                                axios.get(" https://aese.herokuapp.com/ateliermasquer/"+obj._id).then(res=>{
+                                                    axios.get('https://aese.herokuapp.com/profil/'+localStorage.getItem('id')).then(res=>{
                                                 console.log(res.data)
                                                 this.setState({profil:res.data})
                                                 })
@@ -81,8 +81,8 @@ export default class Mesateliers extends Component {
                                                 }}>Desactiver</button>):(<button className="btn bg-danger" id="desactiver" onClick={(e)=>{
                                                 e.preventDefault()
                                                     console.log(obj._id)
-                                                   axios.get("http://aese.herokuapp.com/atelierafficher/"+obj._id).then(res=>{
-                                                        axios.get('http://aese.herokuapp.com/profil/'+ localStorage.getItem('id')).then(res=>{
+                                                   axios.get("https://aese.herokuapp.com/atelierafficher/"+obj._id).then(res=>{
+                                                        axios.get('https://aese.herokuapp.com/profil/'+ localStorage.getItem('id')).then(res=>{
                                                 console.log(res.data)
                                                 this.setState({profil:res.data})
                                                     })

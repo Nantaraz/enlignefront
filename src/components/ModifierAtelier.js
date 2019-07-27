@@ -39,7 +39,7 @@ handleUploadImage(ev) {
   data.append('NombrePlacesRes',this.state.NombrePlacesRes)
   data.append('Prix',this.state.Prix);
 
-  fetch('http://aese.herokuapp.com/putAtelier/'+this.props.match.params._id, {
+  fetch('https://aese.herokuapp.com/putAtelier/'+this.props.match.params._id, {
     method: 'PUT',
     body: data,
   }).then((response) => {
@@ -47,7 +47,7 @@ handleUploadImage(ev) {
       console.log('this.props.match.params.id '+this.props.match.params._id);
     
     response.json().then((body) => {
-      this.setState({ photo_profil: `http://aese.herokuapp.com/putAtelier/${body.photo_profil}` });
+      this.setState({ photo_profil: `https://aese.herokuapp.com/putAtelier/${body.photo_profil}` });
       console.log('ity ilay body.image', body.photo_profil);
 
     });
