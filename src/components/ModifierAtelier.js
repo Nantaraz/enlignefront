@@ -73,20 +73,23 @@ handleUploadImage(ev) {
           onChange={this.onChange}
           placeholder="Déscription"
           name="Description" /><br></br>
-        <input type="Date"
-          id = "inputatelier"
+          <label>Date :</label>
+        <input type="date"
+         id = "inputtime"
           value={this.state.Date}
           onChange={this.onChange}
           placeholder="Date"
-          name="Date" /><br></br>  
+          name="Date" /><br></br>
+          <label>Début:</label>   
         <input type="text"
-          id = "inputatelier"
+          id = "inputtime"
           value={this.state.HoraireDebut}
           onChange={this.onChange}
           placeholder="Horaire Début"
           name="HoraireDebut" /><br></br>
+           <label>Durée</label>
         <input type="text"
-          id = "inputatelier"
+          id = "inputtime"
           value={this.state.Duree}
           onChange={this.onChange}
           placeholder="Durée"

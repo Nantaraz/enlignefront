@@ -72,7 +72,7 @@ class Home extends React.Component {
               placeholder="Déscription"
               name="Description" /><br></br>
               <label>Date :</label>
-            <input type="Date"
+            <input type="date"
               id = "inputtime"
               value={this.state.Date}
               onChange={this.onChange}
