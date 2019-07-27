@@ -11,17 +11,6 @@ export default class Mesateliers extends Component {
         super(props);
         this.state = { 
             profil: [],
-            Titre: '',
-            Description:'',
-            Date:'',
-            HoraireDebut:'',
-            Duree:'',
-            NombrePlacesDispo:'',
-            NombrePlacesRes:'',
-            Prix:'',
-            photo_profil:'',
-            name:'',
-            visibilite:true
          };
 
     }
@@ -69,7 +58,7 @@ export default class Mesateliers extends Component {
                                             </div>
                                             <div className="col-md-6">
                                             <div>
-                                            {obj.visibilite===true ?(<button className="btn bg-danger" id="activer" onClick={(e)=>{
+                                            {obj.visibilite===true ?(<button className="btn bg-success" id="activer" onClick={(e)=>{
                                                 e.preventDefault()
                                                 axios.get(" https://aese.herokuapp.com/ateliermasquer/"+obj._id).then(res=>{
                                                     axios.get('https://aese.herokuapp.com/profil/'+localStorage.getItem('id')).then(res=>{
@@ -80,7 +69,7 @@ export default class Mesateliers extends Component {
                                             
                                                 
                                                 }}>Desactiver</button>):(<button className="btn bg-danger" id="desactiver" onClick={(e)=>{
-                                                e.preventDefault()
+                                                
                                                     console.log(obj._id)
                                                    axios.get("https://aese.herokuapp.com/atelierafficher/"+obj._id).then(res=>{
                                                         axios.get('https://aese.herokuapp.com/profil/'+ localStorage.getItem('id')).then(res=>{

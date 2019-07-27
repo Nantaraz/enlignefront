@@ -65,26 +65,29 @@ class Home extends React.Component {
               onChange={this.onChange}
               placeholder="Titre"
               name="Titre" /><br></br>
-            <input type="text"
-              id = "inputatelier"
+            <textarea type="text"
+              id = "inputdes"
               value={this.state.Description}
               onChange={this.onChange}
               placeholder="Déscription"
               name="Description" /><br></br>
+              <label>Date :</label>
             <input type="Date"
-              id = "inputatelier"
+              id = "inputtime"
               value={this.state.Date}
               onChange={this.onChange}
               placeholder="Date"
-              name="Date" /><br></br>  
-            <input type="text"
-              id = "inputatelier"
+              name="Date" /><br></br> 
+              <label>Début:</label> 
+            <input type="time"
+              id = "inputtime"
               value={this.state.HoraireDebut}
               onChange={this.onChange}
               placeholder="Horaire Début"
               name="HoraireDebut" /><br></br>
-            <input type="text"
-              id = "inputatelier"
+              <label>Durée</label>
+            <input type="time"
+              id = "inputtime"
               value={this.state.Duree}
               onChange={this.onChange}
               placeholder="Durée"
