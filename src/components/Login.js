@@ -53,20 +53,19 @@ class Login extends Component {
         const {errors} = this.state;
         return(
             <form onSubmit={ this.handleSubmit }>
-                <div class="container" id="login">
+                <div class="container" >
     <div class="card card-login mx-auto text-center bg-dark">
-        {/* <div class="card-header mx-auto bg-dark">
+         <div >
             <span> <img src="https://amar.vote/assets/img/amarVotebd.png" class="w-75" alt="Logo"/> </span><br/>
-                        <span class="logo_title mt-5"> Login Dashboard </span>
-
-        </div> */}
+                      
+        </div> 
         <div class="card-body">
             <form action="" method="post">
                 <div class="input-group form-group">
                     <div class="input-group-prepend">
                         <span class="input-group-text"><i class="fas fa-user"></i></span>
                     </div>
-                    <input type="text" name="email" value={this.state.email} onChange={this.handleInputChange} className={classnames('form-control form-control-lg', {
+                    <input id="logininput" type="text" name="email" value={this.state.email} onChange={this.handleInputChange} className={classnames('form-control form-control-lg', {
                         'is-invalid': errors.email
                     })} placeholder="E-mail"/>{errors.email && (<div className="invalid-feedback">{errors.email}</div>)}
                 </div>
@@ -75,15 +74,15 @@ class Login extends Component {
                     <div class="input-group-prepend">
                         <span class="input-group-text"><i class="fas fa-key"></i></span>
                     </div>
-                    <input type="password" name="password" value={this.state.password} onChange={this.handleInputChange} className={classnames('form-control form-control-lg', {
+                    <input type="password"  id="logininput" name="password" value={this.state.password} onChange={this.handleInputChange} className={classnames('form-control form-control-lg', {
                         'is-invalid': errors.password
                     })}  placeholder="Password"/> {errors.password && (<div className="invalid-feedback">{errors.password}</div>)}
                 </div>
 
                 <div class="form-group">
-                    <input type="submit" name="btn" value="Login" class="btn btn-outline-danger float-right login_btn"/>
+                    <input type="submit" id="butlogin" name="btn" value="S'identifier" class="btn btn-outline-primary float-right login_btn"/>
                 </div>
-
+                
             </form>
         </div>
     </div>

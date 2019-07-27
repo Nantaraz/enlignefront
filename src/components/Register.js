@@ -62,10 +62,11 @@ class Register extends Component {
         const { errors } = this.state;
         return(
         <div className="container" style={{ marginTop: '50px', width: '700px'}}>
-            <h2 style={{marginBottom: '40px'}}>Registration</h2>
+            <h1 style={{marginBottom: '40px',marginLeft:'70px'}}>Création du compte</h1>
             <form onSubmit={ this.handleSubmit }>
                 <div className="form-group">
                     <input
+                    id="inputregister"
                     type="text"
                     placeholder="Nom"
                     className={classnames('form-control form-control-lg', {
@@ -79,6 +80,7 @@ class Register extends Component {
                 </div>
                 <div className="form-group">
                     <input
+                    id="inputregister"
                     type="text"
                     placeholder="Prenom"
                     className={classnames('form-control form-control-lg', {
@@ -92,6 +94,7 @@ class Register extends Component {
                 </div>
                 <div className="form-group">
                     <input
+                    id="inputregister"
                     type="email"
                     placeholder="Email"
                     className={classnames('form-control form-control-lg', {
@@ -105,6 +108,7 @@ class Register extends Component {
                 </div>
                 <div className="form-group">
                     <input
+                    id="inputregister"
                     type="text"
                     placeholder="Spécialité"
                     className={classnames('form-control form-control-lg', {
@@ -118,6 +122,7 @@ class Register extends Component {
                 </div>
                 <div className="form-group">
                     <input
+                    id="inputregister"
                     type="password"
                     placeholder="Password"
                     className={classnames('form-control form-control-lg', {
@@ -131,6 +136,7 @@ class Register extends Component {
                 </div>
                 <div className="form-group">
                     <input
+                    id="inputregister"
                     type="password"
                     placeholder="Confirm Password"
                     className={classnames('form-control form-control-lg', {
@@ -143,12 +149,14 @@ class Register extends Component {
                     {errors.password_confirm && (<div className="invalid-feedback">{errors.password_confirm}</div>)}
                 </div>
                 <div className="form-group">
-                    <button type="submit" className="btn btn-primary">
-                        Register User
+                    <button type="submit" className="btn btn-primary" id="butregister">
+                        S'inscrire
                     </button>
                 </div>
             </form>
         </div>
+
+        
         )
     }
 }
