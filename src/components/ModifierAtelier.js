@@ -1,5 +1,7 @@
 import React from 'react';
-
+import {confirmAlert} from 'react-confirm-alert';
+import 'react-confirm-alert/src/react-confirm-alert.css';
+import {MDBIcon} from 'mdbreact';
 
 class ModifierAteliers extends React.Component {
   constructor(props){
@@ -81,14 +83,14 @@ handleUploadImage(ev) {
           placeholder="Date"
           name="Date" /><br></br>
           <label>Début:</label>   
-        <input type="text"
+        <input type="time"
           id = "inputtime"
           value={this.state.HoraireDebut}
           onChange={this.onChange}
           placeholder="Horaire Début"
           name="HoraireDebut" /><br></br>
            <label>Durée</label>
-        <input type="text"
+        <input type="time"
           id = "inputtime"
           value={this.state.Duree}
           onChange={this.onChange}
@@ -113,7 +115,20 @@ handleUploadImage(ev) {
           placeholder="Prix"
           name="Prix" /><br/><br/><br/><br/><br/>   
           <input id="jtext" ref={(ref) => { this.uploadInput = ref; }} type="file" name="photo_profil"/><br/>
-          <button className="btn btn-secondary" id="butatelier">Confirmer</button>
+          <button className="btn btn-outline-orange" type="submit" onClick={() => {
+                        confirmAlert({
+                          customUI: () => {
+                            return (
+                              <div className='custom-ui'>
+                                <h1>Mise à jour reussi! </h1>
+                                <center></center><a href="/dashboard" id="okajout" className="btn btn-primary">OK</a>
+                              </div>
+                            );
+                          }
+                        });
+                      }} type="submit" id="ajouter_boutton">
+                        Modifier <MDBIcon icon="paper-plane" className="ml-3" />
+              </button>
         </center>
       </form>
 

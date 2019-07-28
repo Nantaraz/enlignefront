@@ -42,7 +42,7 @@ class Navbar extends Component {
                 <li class="dropdown">
                     <a class="dropdown-toggle" role="button" data-toggle="dropdown" href="a"><i class="fa fa-user-circle"></i> Admin </a>
                     <ul id="g-account-menu" class="dropdown-menu" role="menu">
-                    <li><a href="a" to="/login" onClick={this.onLogout.bind(this)}><i class="fa fa-sign-out" ></i> Logout</a></li>
+                    <li><a href="a" to="/login" onClick={this.onLogout.bind(this)}><i class="fa fa-sign-out" ></i> Déconnecter</a></li>
                     </ul>
                 </li>
               
@@ -56,7 +56,7 @@ class Navbar extends Component {
 <div class="col-lg-2 col-md-2 col-sm-3 col-xs-12" id ="aaa">
 
     <ul  >
-    <h4> <li><a href="eee" id = "Atelier"><i class="fa fa-dashboard"></i>Dashboard</a></li></h4><br/><br/><br/><br/><br/>
+    <h4> <li><a href="" id = "Atelier"><i class="fa fa-dashboard"></i>Dashboard</a></li></h4><br/><br/><br/><br/><br/>
         <li><Link to={"/profil/"+localStorage.getItem('id')}><a href="a" id = "Atelier"><i class="fa fa-tags"></i> Listes de mes ateliers</a></Link></li><br/><br/><br/>
         <li><Link to="/monAtelier"><a href="a" id = "Atelier"><i class="fa fa-history"></i> Ajouter un atelier</a></Link></li><br/><br/><br/>
         {/* <li><a href="a"><i class="fa fa-lock"></i> Change Password</a></li><br/><br/> */}

@@ -73,6 +73,7 @@ export default class Inscrire extends Component {
                       placeholder="Nom"
                       value={this.state.Nom}
                       onChange={this.onChangenom}
+                      required
                       />
                 </div>
                 <div className="form-group">
@@ -82,6 +83,7 @@ export default class Inscrire extends Component {
                       placeholder="Prenom"
                       value={this.state.Prenom}
                       onChange={this.onChangeprenom}
+                      required
                       />
                 </div>
                 <div className="form-group">
@@ -91,6 +93,7 @@ export default class Inscrire extends Component {
                       placeholder="Telephone"
                       value={this.state.Telephone}
                       onChange={this.onChangetelephone}
+                      required
                       />
                 </div>
                 <div className="form-group">
@@ -100,6 +103,7 @@ export default class Inscrire extends Component {
                       placeholder="Email"
                       value={this.state.Email}
                       onChange={this.onChangeemail}
+                      required
                       />
                 </div>
                
