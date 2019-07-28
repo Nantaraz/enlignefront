@@ -191,9 +191,11 @@ footer{
   font-size: 80px;
   color: #d05c62;
   text-decoration: underline;
+  font-family: "Roboto";
 }
 #milieu{
-  font-size:30px
+  font-size:30px;
+  font-family: Verdana;
 }
 #edit{
   width: 85%;
@@ -239,6 +241,7 @@ h3{
   height: 60px;
   width: 50%;
   font-size: 20px;
+  margin-right: 75px;
 }
 #inputregister{
   width: 60%;
@@ -252,4 +255,13 @@ h3{
   margin-top: 30px;
   height: 70px;
   width: 20%
+}
+#ajouter_boutton{
+  font-size: 35px;
+  color: chocolate;
+}
+#anarana{
+  width: 99%;
+  height: 200px;
+  margin-bottom: 40px
 }

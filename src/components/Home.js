@@ -1,7 +1,5 @@
 import React from 'react';
 import axios from 'axios';
-//import { confirmAlert } from 'react-confirm-alert';
-//import 'react-confirm-alert/src/react-confirm-alert.css';
 import { Link } from 'react-router-dom';
 import Slider from './Slider'
 
@@ -30,7 +28,7 @@ class Home extends React.Component {
         return <div>
             <Slider />
              
-            <div id ="a" class="row">
+            <div  class="row">
 
                 {
                    (this.state.profil.length > 0) ? (this.state.profil.filter((params) => params.visibilite).map((obj) => {
@@ -43,14 +41,15 @@ class Home extends React.Component {
                                     <div class="card-body">
 
                                         <center><h4 class="card-title" id="titre">{obj.Titre}</h4></center>
-                                        <img width="98%" height="90%" src={'https://aese.herokuapp.com/user/' + obj.photo_profil} alt="pdp" />
-                                        <p class="card-text" id='milieu'><li>Déscription: {obj.Description}</li></p>
-                                        <p class="card-text" id='milieu'><li>Date: {obj.Date}</li></p>
-                                        <p class="card-text" id='milieu'><li>Horaire du Debut: {obj.HoraireDebut}</li></p>
-                                        <p class="card-text" id='milieu'><li>Durée: {obj.Duree}</li></p>
-                                        <p class="card-text" id='milieu'><li>Place dispo: {obj.NombrePlacesDispo}</li></p>
-                                        <p class="card-text" id='milieu'><li>Place res: {obj.NombrePlacesRes}</li></p>
-                                        <p class="card-text" id='milieu'><li>Prix: {obj.Prix} Ar</li></p>
+                                        <div className="container"><img width="98%" height="90%" src={'https://aese.herokuapp.com/user/' + obj.photo_profil} alt="pdp" /></div>
+                                        
+                                        <p class="card-text" id='milieu'>Déscription: {obj.Description}</p>
+                                        <p class="card-text" id='milieu'>Date: {obj.Date}</p>
+                                        <p class="card-text" id='milieu'>Horaire du Debut: {obj.HoraireDebut}</p>
+                                        <p class="card-text" id='milieu'>Durée: {obj.Duree}</p>
+                                        <p class="card-text" id='milieu'>Place dispo: {obj.NombrePlacesDispo}</p>
+                                        <p class="card-text" id='milieu'>Place res: {obj.NombrePlacesRes}</p>
+                                        <p class="card-text" id='milieu'>Prix: {obj.Prix} Ar</p>
                                         <Link to="inscrire"><center><button className="btn btn-success" id="butatelier">S'inscrire</button></center></Link>
                                     </div>
                                 </div>

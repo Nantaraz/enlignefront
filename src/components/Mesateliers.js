@@ -29,8 +29,6 @@ export default class Mesateliers extends Component {
 
     liste() {
         return <div>
-
-<div>
             <div class="row">
 
                 {
@@ -41,24 +39,24 @@ export default class Mesateliers extends Component {
                                     <div class="card-body">
 
                                         <center><h4 class="card-title" id="titre">{obj.Titre}</h4></center>
-                                        <img width="98%" height="90%" src={'https://aese.herokuapp.com/user/' + obj.photo_profil} alt="pdp" />
-                                        <p class="card-text" id='milieu'><li>Déscription: {obj.Description}</li></p>
-                                        <p class="card-text" id='milieu'><li>Date: {obj.Date}</li></p>
-                                        <p class="card-text" id='milieu'><li>Horaire du Debut: {obj.HoraireDebut}</li></p>
-                                        <p class="card-text" id='milieu'><li>Durée: {obj.Duree}</li></p>
-                                        <p class="card-text" id='milieu'><li>Place dispo: {obj.NombrePlacesDispo}</li></p>
-                                        <p class="card-text" id='milieu'><li>Place res: {obj.NombrePlacesRes}</li></p>
+                                        <img width="98%" height="190px" src={'https://aese.herokuapp.com/user/' + obj.photo_profil} alt="pdp" />
+                                        <p class="card-text" id='milieu'>Déscription: {obj.Description}</p>
+                                        <p class="card-text" id='milieu'>Date: {obj.Date}</p>
+                                        <p class="card-text" id='milieu'>Horaire du Debut: {obj.HoraireDebut}</p>
+                                        <p class="card-text" id='milieu'>Durée: {obj.Duree}</p>
+                                        <p class="card-text" id='milieu'>Place dispo: {obj.NombrePlacesDispo}</p>
+                                        <p class="card-text" id='milieu'>Place res: {obj.NombrePlacesRes}</p>
                                         <p class="card-text" id='milieu' onClick={()=>{
                                             console.log(obj._id);
                                             
-                                        }}><li>Prix: {obj.Prix} Ar</li></p>
+                                        }}>Prix: {obj.Prix} Ar</p>
                                         <div className="row">
                                             <div className="col-md-6">
                                             <Link to={'/putAtelier/'+obj._id}><button className="btn bg-secondary" id="edit">Edit</button></Link>
                                             </div>
                                             <div className="col-md-6">
                                             <div>
-                                            {obj.visibilite===true ?(<button className="btn bg-success" id="activer" onClick={(e)=>{
+                                            {obj.visibilite===true ?(<button className="btn bg-danger" id="activer" onClick={(e)=>{
                                                 e.preventDefault()
                                                 axios.get(" https://aese.herokuapp.com/ateliermasquer/"+obj._id).then(res=>{
                                                     axios.get('https://aese.herokuapp.com/profil/'+localStorage.getItem('id')).then(res=>{
@@ -68,7 +66,7 @@ export default class Mesateliers extends Component {
                                                     console.log(res.data)})
                                             
                                                 
-                                                }}>Desactiver</button>):(<button className="btn bg-danger" id="desactiver" onClick={(e)=>{
+                                                }}>Desactiver</button>):(<button className="btn bg-success" id="desactiver" onClick={(e)=>{
                                                 
                                                     console.log(obj._id)
                                                    axios.get("https://aese.herokuapp.com/atelierafficher/"+obj._id).then(res=>{
@@ -91,10 +89,11 @@ export default class Mesateliers extends Component {
                     })) : ('')
                 }
             </div>
-        </div>
+            </div>
+        
             
 
-        </div>
+        
     }
     render() {
         return (

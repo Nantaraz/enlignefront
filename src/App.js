@@ -15,6 +15,7 @@ import MesAteliers from './components/Mesateliers';
 import ModifierAteliers from './components/ModifierAtelier';
 import Inscrire from './components/inscrire';
 import FooterPage from './components/FooterPage';
+import PrivateRoute from './components/PrivateRoute'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -45,6 +46,7 @@ class App extends Component {
                   <Route exact path={"/profil/"+localStorage.getItem('id')} component={ MesAteliers } />
                   <Route exact path="/putAtelier/:_id" component={ ModifierAteliers } />
                   <Route exact path="/inscrire" component={ Inscrire } /> 
+                  {/* <PrivateRoute exact path="/admin" component={Login}/> */}
                 </div>
               <FooterPage />
             </div>

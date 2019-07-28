@@ -1,4 +1,7 @@
 import React from 'react';
+import {MDBIcon} from 'mdbreact';
+import {confirmAlert} from 'react-confirm-alert';
+import 'react-confirm-alert/src/react-confirm-alert.css';
 
 class Home extends React.Component {
 
@@ -110,7 +113,21 @@ class Home extends React.Component {
               placeholder="Prix"
               name="Prix" /><br></br><br></br>    
               <input id="jtext" ref={(ref) => { this.uploadInput = ref; }} type="file" name="photo_profil"/><br></br> <br></br>  
-              <button type="submit" id="butatelier">Ajouter</button>
+              {/* <button type="submit" id="butatelier">Ajouter</button> */}
+              <button className="btn btn-outline-orange" type="submit" onClick={() => {
+                        confirmAlert({
+                          customUI: () => {
+                            return (
+                              <div className='custom-ui'>
+                                <h1>Mise à jour reussi! </h1>
+                                <center></center><a href="/dashboard" id="okajout" className="btn btn-primary">OK</a>
+                              </div>
+                            );
+                          }
+                        });
+                      }} type="submit" id="ajouter_boutton">
+                        Valider <MDBIcon icon="paper-plane" className="ml-3" />
+              </button>
             </center>
           </form>
 </div>
