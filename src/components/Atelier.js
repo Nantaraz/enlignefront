@@ -14,8 +14,7 @@ class Home extends React.Component {
           NombrePlacesDispo:'',
           NombrePlacesRes:'',
           Prix:'',
-          photo_profil:'',
-          visibilite:false
+          photo_profil:''
     
         };
         this.onChange = this.onChange.bind(this)
@@ -111,7 +110,7 @@ class Home extends React.Component {
               placeholder="Prix"
               name="Prix" /><br></br><br></br>    
               <input id="jtext" ref={(ref) => { this.uploadInput = ref; }} type="file" name="photo_profil"/><br></br> <br></br>  
-              <button id="butatelier">Ajouter</button>
+              <button type="submit" id="butatelier">Ajouter</button>
             </center>
           </form>
 </div>
