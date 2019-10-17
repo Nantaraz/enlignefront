@@ -19,9 +19,9 @@ class Slider extends Component {
             </MDBView>
             <MDBCarouselCaption>
               <Animation type="zoomInUp" duration="1s">
-                <h3 className="h3-responsive"> <h3 className="h3-responsive">Nous voulons une application web qui permette à des particuliers de s’inscrire aux ateliers
+                {/* <h3 className="h3-responsive"> <h3 className="h3-responsive">Nous voulons une application web qui permette à des particuliers de s’inscrire aux ateliers
 que nous proposons </h3>    </h3>
-              
+               */}
               </Animation>
               <Animation type="zoomInUp" duration="1s">
                 <h3 className="h3-responsive">"Nos cibles sont les jeunes actifs entre 25 - 35 ans. Des personnes qui veulent apprendre à
@@ -38,8 +38,8 @@ cuisiner afin de manger correctement." </h3>
             </MDBView>
             <MDBCarouselCaption>
               <Animation type="zoomInUp" duration="1s">
-                <h3 className="h3-responsive"> <h3 className="h3-responsive">Nous voulons une application web qui permette à des particuliers de s’inscrire aux ateliers
-que nous proposons </h3>   </h3>
+                {/* <h3 className="h3-responsive"> <h3 className="h3-responsive">Nous voulons une application web qui permette à des particuliers de s’inscrire aux ateliers
+que nous proposons </h3>   </h3> */}
                
               </Animation>
               <Animation type="zoomInUp" duration="1s">
@@ -56,8 +56,8 @@ cuisiner afin de manger correctement." </h3>
             </MDBView>
             <MDBCarouselCaption>
               <Animation type="zoomInUp" duration="1s">
-                <h3 className="h3-responsive">Nous voulons une application web qui permette à des particuliers de s’inscrire aux ateliers
-que nous proposons </h3>      
+                {/* <h3 className="h3-responsive">Nous voulons une application web qui permette à des particuliers de s’inscrire aux ateliers
+que nous proposons </h3>       */}
                 </Animation>
                 <Animation type="zoomInUp" duration="1s">
                 <h3 className="h3-responsive">"Nos cibles sont les jeunes actifs entre 25 - 35 ans. Des personnes qui veulent apprendre à
@@ -73,8 +73,8 @@ cuisiner afin de manger correctement." </h3>
             </MDBView>
             <MDBCarouselCaption>
               <Animation type="zoomInUp" duration="2s">
-                <h3 className="h3-responsive"> <h3 className="h3-responsive">Nous voulons une application web qui permette à des particuliers de s’inscrire aux ateliers
-que nous proposons </h3>    </h3>
+                {/* <h3 className="h3-responsive"> <h3 className="h3-responsive">Nous voulons une application web qui permette à des particuliers de s’inscrire aux ateliers
+que nous proposons </h3>    </h3> */}
         
               </Animation>
               <Animation type="zoomInUp" duration="1s">

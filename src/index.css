@@ -102,6 +102,14 @@ input:focus{
   font-size: 25px;
   margin-left: 30px;
 }
+#inputatelier1{
+  width: 48%;
+  height: 50px;
+  text-align: center;
+  margin-top: 3%;
+  font-size: 25px;
+  margin-left: 140px;
+}
 #inputdes{
   width: 48%;
   height: 150px;

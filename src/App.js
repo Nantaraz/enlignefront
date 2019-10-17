@@ -15,7 +15,6 @@ import MesAteliers from './components/Mesateliers';
 import ModifierAteliers from './components/ModifierAtelier';
 import Inscrire from './components/inscrire';
 import FooterPage from './components/FooterPage';
-import PrivateRoute from './components/PrivateRoute'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 

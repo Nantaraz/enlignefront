@@ -1,11 +1,10 @@
 
 import React, { Component } from 'react';
 import axios from 'axios';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
 
-
-
-export default class Mesateliers extends Component {
+class Mesateliers extends Component {
 
     constructor(props) {
         super(props);
@@ -24,6 +23,13 @@ export default class Mesateliers extends Component {
             .catch(function (error) {
                 console.log(error);
             })
+
+        if(this.props.auth.isAuthenticated) {
+            
+        }
+        else{
+            this.props.history.push('/login');
+        }
 
     }
 
@@ -103,3 +109,9 @@ export default class Mesateliers extends Component {
         );
     }
 }
+    const mapStateToProps = (state) => ({
+        auth: state.auth,
+        errors: state.errors
+    })
+    
+    export  default connect(mapStateToProps)(Mesateliers)

@@ -2,8 +2,9 @@ import React from 'react';
 import {MDBIcon} from 'mdbreact';
 import {confirmAlert} from 'react-confirm-alert';
 import 'react-confirm-alert/src/react-confirm-alert.css';
+import { connect } from 'react-redux';
 
-class Home extends React.Component {
+class Atelier extends React.Component {
 
       constructor(props) {
         super(props);
@@ -28,6 +29,16 @@ class Home extends React.Component {
             [event.target.name]: event.target.value
         })
     }
+    componentDidMount() 
+      {
+        if(this.props.auth.isAuthenticated) {
+            
+        }
+        else{
+            this.props.history.push('/login');
+        }
+       }
+
       handleUploadImage(ev) {
         ev.preventDefault();
         const data = new FormData();
@@ -107,7 +118,7 @@ class Home extends React.Component {
               placeholder="Place Res"
               name="NombrePlacesRes" /><br></br>       
             <input type="Number"
-              id = "inputatelier"
+              id = "inputatelier1"
               value={this.state.Prix}
               onChange={this.onChange}
               placeholder="Prix"
@@ -136,7 +147,9 @@ class Home extends React.Component {
       }
     }
 
-    
-    
-
-export default Home
+    const mapStateToProps = (state) => ({
+      auth: state.auth,
+      errors: state.errors
+  })
+  
+  export  default connect(mapStateToProps)(Atelier)

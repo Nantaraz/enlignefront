@@ -91,9 +91,22 @@ class Navbar extends Component {
        </MDBNavItem>
      </MDBNavbarNav>
      <MDBNavbarNav right>
-     <MDBNavLink className="waves-effect waves-light" to="/login">
+
+     <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" role="button" data-toggle="dropdown" href="a"><i class="fa fa-user-circle"></i> Espace Admin </a>
+                    <ul id="g-account-menu" class="dropdown-menu" role="menu">
+                    <li><a href="register"><i class="fa fa-sign-out" ></i> Créer un compte </a></li>
+                    <li><a href="a" to="/login" onClick={this.onLogout.bind(this)}><i class="fa fa-sign-out" ></i> Se connecter</a></li>
+                    </ul>
+                </li>
+              
+            </ul>
+
+
+     {/* <MDBNavLink className="waves-effect waves-light" to="/login">
               Connecter
-            </MDBNavLink>
+            </MDBNavLink> */}
      </MDBNavbarNav>
    </MDBCollapse>
  </MDBNavbar>
